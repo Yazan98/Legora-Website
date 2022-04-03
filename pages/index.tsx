@@ -3,10 +3,7 @@ import LegoraLayout from "../components/LegoraLayout";
 import {PagesTitleConstants} from "../content/constants/PagesTitleConstants";
 import HomePageCoverComponent from "../components/home/HomePageCoverComponent";
 import ServicesComponent from "../components/home/ServicesComponent";
-import {HomeServicesContent} from "../content/content/HomeServicesContent";
-import HomeCodeSnippetComponent from "../components/home/HomeCodeSnippetComponent";
 import {ApplicationStringsUtils} from "../content/utils/ApplicationStringsUtils";
-import HomeInverseCodeSnippetComponent from "../components/home/HomeInverseCodeSnippetComponent";
 
 const Home: NextPage = () => {
   return (
