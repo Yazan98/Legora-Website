@@ -2,12 +2,14 @@ import React from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {ApplicationColors} from "../../content/utils/ApplicationColors";
+import Logo from '../../assets/images/icon_red.png';
 
 export default function InnerToolbarComponent({ isTitleWhite }) {
     const router = useRouter()
     return (
         <nav className={"flex justify-between items-center h-16 text-white relative font-mono"} role={"navigation"}>
-            <div style={{ fontSize: "large", color: isTitleWhite ? "white":  ApplicationColors.PRIMARY_COLOR }} className={"pl-8 text-3x1"}>
+            <div style={{ marginTop: "1em", fontSize: "large", color: isTitleWhite ? "white":  ApplicationColors.PRIMARY_COLOR }} className={"pl-8 text-3x1 flex items-center"}>
+                <img src={Logo.src} alt={"Legora Logo"} height={"50px"} width={"50px"} style={{ marginRight: "1em" }} />
                 <Link href={"/"}><a style={{ color: isTitleWhite ? "white":  ApplicationColors.PRIMARY_COLOR, fontSize: "medium" }}>Legora</a></Link>
             </div>
             <div className={"px-4 cursor-pointer md:hidden"} onClick={() => router.push("nav")}>
@@ -19,15 +21,15 @@ export default function InnerToolbarComponent({ isTitleWhite }) {
                 <div style={{ color: isTitleWhite ? "white": router.pathname === "/" ? ApplicationColors.PRIMARY_COLOR : "" }} className={"p-2"}>
                     <Link href="/"><a>Home</a></Link>
                 </div>
-                {/*<div style={{ color: isTitleWhite ? "white": router.pathname === "/documentation" ?  ApplicationColors.PRIMARY_COLOR : ""}} className={"p-2"}>*/}
-                {/*    <Link href="/documentation"><a>Documentation</a></Link>*/}
-                {/*</div>*/}
-                {/*<div style={{ color: isTitleWhite ? "white": router.pathname === "/skills" ?  ApplicationColors.PRIMARY_COLOR : "" }} className={"p-2"}>*/}
-                {/*    <Link href="/skills"><a>Tools</a></Link>*/}
-                {/*</div>*/}
-                {/*<div style={{ color: isTitleWhite ? "white": router.pathname === "/archive" ?  ApplicationColors.PRIMARY_COLOR : "" }} className={"p-2"}>*/}
-                {/*    <Link href="/archive"><a>Versions</a></Link>*/}
-                {/*</div>*/}
+                <div style={{ color: isTitleWhite ? "white": router.pathname === "/versions" ?  ApplicationColors.PRIMARY_COLOR : "black"}} className={"p-2"}>
+                    <Link href="/versions"><a>Versions</a></Link>
+                </div>
+                <div style={{ color: isTitleWhite ? "white": router.pathname === "/generator" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
+                    <Link href="/generator"><a>Generator</a></Link>
+                </div>
+                <div style={{ color: isTitleWhite ? "white": router.pathname === "/about" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
+                    <Link href="/about"><a>About</a></Link>
+                </div>
             </div>
         </nav>
     );
