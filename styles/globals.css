@@ -62,3 +62,9 @@ ul {
   font-family: 'Noto Sans SC', sans-serif;
   scroll-behavior: smooth;
 }
+
+.HomeHero {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 64%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 64%);
+  overflow-x: hidden;
+}

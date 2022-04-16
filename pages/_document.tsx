@@ -21,7 +21,7 @@ class MyDocument extends Document {
                 <meta name="author" content="Yazan Tarifi" />
                 <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
-                <meta name="keywords" content="Legora - is a Project Starter To Build Application with Several Languages, Frameworks, Libraries and Code Generator to Generate the Project With Ready Configuration" />
+                <meta name="keywords" content="Android Generator, Applications Generator, Software Generator, Project Starter, Android Library Starter, Maven Central Starter, Android Library Maven Configurations, Spring Boot Starter, Spring Boot Generator, Spring Boot Kotlin Applications, Spring Boot Project Starter, ReactJs Generator, ReactJs Project Starter, NextJs Project Starter, NextJs Generator" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:site_name" content="Legora" />
                 <meta name="google-site-verification" content="Po9v_9xMO5UzA7eBfksNKj3oF3URDEAfh3bJJ3Po0M4" />
