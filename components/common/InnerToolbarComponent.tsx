@@ -30,6 +30,9 @@ export default function InnerToolbarComponent({ isTitleWhite }) {
                 <div style={{ color: isTitleWhite ? "white": router.pathname === "/about" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
                     <Link href="/about"><a>About</a></Link>
                 </div>
+                <div style={{ color: isTitleWhite ? "white": router.pathname === "/about" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
+                    <Link href="/projects"><a>Supported Projects</a></Link>
+                </div>
             </div>
         </nav>
     );

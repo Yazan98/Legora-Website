@@ -5,7 +5,7 @@ import MainImage from '../../assets/images/main.png';
 
 export default function HomePageCoverComponent() {
     return (
-        <section className={"relative h-screen w-screen overflow-hidden"} style={{ position: "relative" }}>
+        <section className={"relative h-screen w-screen overflow-hidden"}>
             <div className="flex flex-col-reverse lg:flex-row text-white" style={{ height: "100vh" }}>
                 <div style={{ width: "60vw" }}>
                     <InnerToolbarComponent isTitleWhite={false} />
@@ -33,7 +33,7 @@ export default function HomePageCoverComponent() {
                         <div/>
                         <div className="flex justify-left flex-wrap mt-1">
                             <a
-                                href="https://github.com/legora-io"
+                                href="https://github.com/Yazan98/Legora"
                                 className={"rounded-full text-black bg-white flex items-start p-3 m-2 text-xs"}
                                 style={{ backgroundColor: ApplicationColors.BACKGROUND_COLOR, paddingLeft: "2em", paddingRight: "2em" }}>
                                 Github
@@ -53,8 +53,6 @@ export default function HomePageCoverComponent() {
                      position: "absolute",
                      right: "0%",
                      top: "15%",
-                     maxWidth: "100%",
-                     maxHeight: "100%",
                      objectFit: "contain"
                  }}/>
         </section>
