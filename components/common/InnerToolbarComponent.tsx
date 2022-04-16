@@ -18,19 +18,19 @@ export default function InnerToolbarComponent({ isTitleWhite }) {
                 </svg>
             </div>
             <div className={"pr-4 sm:hidden md:hidden lg:block xlg:block hidden lg:flex md:flex justify-between items-center"}>
-                <div style={{ color: isTitleWhite ? "white": router.pathname === "/" ? ApplicationColors.PRIMARY_COLOR : "" }} className={"p-2"}>
+                <div style={{ color: isTitleWhite ? "white": router.pathname === "/" ? ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
                     <Link href="/"><a>Home</a></Link>
                 </div>
-                <div style={{ color: isTitleWhite ? "white": router.pathname === "/versions" ?  ApplicationColors.PRIMARY_COLOR : "black"}} className={"p-2"}>
-                    <Link href="/versions"><a>Versions</a></Link>
-                </div>
-                <div style={{ color: isTitleWhite ? "white": router.pathname === "/generator" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
-                    <Link href="/generator"><a>Generator</a></Link>
-                </div>
-                <div style={{ color: isTitleWhite ? "white": router.pathname === "/about" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
-                    <Link href="/about"><a>About</a></Link>
-                </div>
-                <div style={{ color: isTitleWhite ? "white": router.pathname === "/about" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
+                {/*<div style={{ color: isTitleWhite ? "white": router.pathname === "/versions" ?  ApplicationColors.PRIMARY_COLOR : "black"}} className={"p-2"}>*/}
+                {/*    <Link href="/versions"><a>Versions</a></Link>*/}
+                {/*</div>*/}
+                {/*<div style={{ color: isTitleWhite ? "white": router.pathname === "/generator" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>*/}
+                {/*    <Link href="/generator"><a>Generator</a></Link>*/}
+                {/*</div>*/}
+                {/*<div style={{ color: isTitleWhite ? "white": router.pathname === "/about" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>*/}
+                {/*    <Link href="/about"><a>About</a></Link>*/}
+                {/*</div>*/}
+                <div style={{ color: isTitleWhite ? "white": router.pathname === "/projects" ?  ApplicationColors.PRIMARY_COLOR : "black" }} className={"p-2"}>
                     <Link href="/projects"><a>Supported Projects</a></Link>
                 </div>
             </div>

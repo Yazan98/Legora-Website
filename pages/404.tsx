@@ -8,7 +8,7 @@ import ToolbarComponent from "../components/common/ToolbarComponent";
 const NotFoundPage: NextPage = () => {
     return (
         <LegoraLayout title={PagesTitleConstants.HOME_PAGE} description={PagesTitleConstants.HOME_PAGE_DESCRIPTION}>
-            <ToolbarComponent />
+            <InnerToolbarComponent isTitleWhite={false} />
             <main className={"relative w-screen overflow-hidden center items-center place-content-center text-black md:p-2 lg:p-10"}>
                 <div className={""}>
                     <h1>404</h1>

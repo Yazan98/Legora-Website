@@ -18,7 +18,7 @@ export default function HomePageCoverComponent() {
                                 <h2 className={"text-2xl md:text-4 lg:text-5x1 lg:text-left mt-4"} style={{ color: ApplicationColors.TEXT_COLOR, width: "70%" }}>Code Generator To Build Applications With Ready Configurations</h2>
                                 <div className="flex justify-left flex-wrap pt-10">
                                     <a
-                                        href="https://github.com/legora-io"
+                                        href="https://github.com/Yazan98/Legora/releases"
                                         className={"rounded-full text-white bg-white transition duration=300 ease-in-out flex items-start animate-bounce p-5 text-xs"}
                                         style={{ backgroundColor: ApplicationColors.PRIMARY_COLOR, paddingLeft: "3em", paddingRight: "3em" }}>
                                         Download
