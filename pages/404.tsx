@@ -3,7 +3,6 @@ import {NextPage} from "next";
 import LegoraLayout from "../components/LegoraLayout";
 import {PagesTitleConstants} from "../content/constants/PagesTitleConstants";
 import InnerToolbarComponent from "../components/common/InnerToolbarComponent";
-import ToolbarComponent from "../components/common/ToolbarComponent";
 
 const NotFoundPage: NextPage = () => {
     return (
